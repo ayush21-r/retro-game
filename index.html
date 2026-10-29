@@ -102,7 +102,7 @@ kbd{font:700 12px var(--ui);background:var(--key);color:var(--key-ink);border:2p
 }
 @media (orientation:landscape) and (max-height:560px){
   body{padding-top:8px;padding-bottom:12px;align-items:center}
-  .console{max-width:none;display:grid;grid-template-columns:min(calc(100vh - 60px),50vw) 1fr;grid-template-columns:min(calc(100dvh - 60px),50vw) 1fr;column-gap:16px;row-gap:10px;align-content:start;padding:12px 14px 14px;box-shadow:0 6px 0 var(--ink)}
+  .console{width:max-content;max-width:100%;margin-inline:auto;display:grid;grid-template-columns:min(calc(100vh - 60px),50vw) minmax(240px,320px);grid-template-columns:min(calc(100dvh - 60px),50vw) minmax(240px,320px);column-gap:16px;row-gap:10px;align-content:start;padding:12px 14px 14px;box-shadow:0 6px 0 var(--ink)}
   .screen{grid-column:1;grid-row:1 / span 7;width:auto;margin:0}
   .console > *:not(.screen){grid-column:2}
   h1{font-size:32px}
